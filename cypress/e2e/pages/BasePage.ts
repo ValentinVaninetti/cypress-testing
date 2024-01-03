@@ -4,10 +4,10 @@ abstract class BasePage{
         Cypress.on('uncaught:exception', (err, runnable) => {
             return false;
         });
-        cy.visit('https://demo.nopcommerce.com/login/');
+        cy.visit(url);
     }
-    async clickOnElement(element){
-        await cy.get(element).click()
+    async clickOnElement(element: string, options?: { force?: boolean }) {
+        await cy.get(element).customClick(options);
     }
 
 

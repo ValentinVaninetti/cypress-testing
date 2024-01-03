@@ -21,8 +21,12 @@ const e2e = {
 const env = {
   url: 'https://demo.nopcommerce.com',
   loginUrl: 'https://demo.nopcommerce.com/login/',
+  registerUrl:'https://demo.nopcommerce.com/register/',
   username: 'romanRiquelme@gmail.com',
   password: 'romanRiquelme',
+  firstName: 'Roman',
+  lastName: 'Riquelme',
+
 };
 
 export = defineConfig({ e2e, env });
